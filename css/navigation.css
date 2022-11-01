@@ -1,0 +1,42 @@
+.navigation__list {
+    display: block;
+    list-style: none;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    border-top-color: grey;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.navigation__link {
+    display: block;
+    float: right;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+
+}
+
+.navigation__link:focus {
+    outline: 1px currentColor;
+}
+
+.navigation__link:hover {
+    color: #b46429;
+    border-bottom: 2px solid;
+}
+
+.navigation__button {
+    width: 150px;
+    color: #c4c4c4;
+    background-color: #343434;
+    border: none;
+    display: block;
+    float: right;
+    padding-left: 12px;
+    padding-right: 12px;
+}
