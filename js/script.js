@@ -1,20 +1,31 @@
-console.log("Cześć!");
+{
+    const welcome = () => {
+    console.log("Witam wszystkich developerów");
+};
 
-let button = document.querySelector(".js-navigation__button");
-let body = document.querySelector(".body");
-let textColorDark = document.querySelector(".textColorDark");
-let buttonText = document.querySelector(".buttonText");
+const toggleBackground = () => {
+    const body = document.querySelector(".body");
+    const textColorDark = document.querySelector(".js-textColorDark");
+    const buttonText = document.querySelector(".js-buttonText");
 
-// button.addEventListener("click", () => {
-//     body.classList.toggle("bodyDark");
-//     textColorDark.classList.toggle("textColorBright");
-//     buttonText.innerText = body.classList.contains("bodyDark") ? "jasny" : "ciemny"; 
-
-// });
-
-button.addEventListener("click", () => {
     body.classList.toggle("bodyDark");
     textColorDark.classList.toggle("textColorBright");
     buttonText.innerText = body.classList.contains("bodyDark") ? "jasny" : "ciemny";
+};
 
-}); 
+const init = () => {
+    const button = document.querySelector(".js-navigation__button");
+    button.addEventListener("click", toggleBackground);
+
+    welcome ();
+
+    }
+
+
+init ();
+
+}
+
+
+
+

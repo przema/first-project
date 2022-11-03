@@ -9,10 +9,11 @@
     <script defer src="js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/navigation.css" rel="stylesheet">
     <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,41 +25,41 @@
 
 <body class="body">
     <header>
-        <H1 class="textColorDark">DEFTONES</H1>
+        <H1 class="textColorDark js-textColorDark">DEFTONES</H1>
         <nav class="navigation">
             <ul class="navigation__list">
                 <li>
                     <button class="navigation__button js-navigation__button">Włącz tryb <span
-                            class="buttonText">ciemny</span></button>
+                            class="buttonText js-buttonText">ciemny</span></button>
                 </li>
                 <li>
-                    <a class="navigation__link textColorDark" href="#links">Linki</a>
+                    <a class="navigation__link textColorDark js-textColorDark" href="#links">Linki</a>
                 </li>
                 <li>
-                    <a class="navigation__link textColorDark" href="#topFive">TOP 5 utworów</a>
+                    <a class="navigation__link textColorDark js-textColorDark" href="#topFive">TOP 5 utworów</a>
                 </li>
                 <li>
-                    <a class="navigation__link textColorDark" href="#discography">Dyskografia</a>
+                    <a class="navigation__link textColorDark js-textColorDark" href="#discography">Dyskografia</a>
                 </li>
                 <li>
-                    <a class="navigation__link textColorDark" href="#biography">Biografia</a>
+                    <a class="navigation__link textColorDark js-textColorDark" href="#biography">Biografia</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <section class="section section--bright">
-        <p class="quote">"When you hear the first five seconds to a song and you've pretty much heard
+    <div class="section">
+        <p class="section__quote">"When you hear the first five seconds to a song and you've pretty much heard
             the whole
             song, that's
             kind
             of a bummer"</p>
-        <p class="quoteAuthor">
+        <p class="section__quoteAuthor">
             (Chino Moreno, vocalist)
         </p>
         <img class="photo" src="https://i.scdn.co/image/ab6761610000e5eb4b2da0b72cab26ac518f1f0d" alt="Zdjęcie zespołu"
             width="300">
-    </section>
+    </div>
 
     <section class="section" id="biography">
         <h3 class="section__header">Biografia</h3>
@@ -114,62 +115,65 @@
         <h3 class="section__header">
             Dyskografia
         </h3>
-        <ol class="discography">
-            <li class="listItem">Adrenaline (1995)</li>
-            <li class="listItem">Around The Fur (1997)</li>
-            <li class="listItem">White Pony (2000)</li>
-            <li class="listItem">Deftones (2003)</li>
-            <li class="listItem">Saturday Night Wrist (2006)</li>
-            <li class="listItem">Diamond Eyes (2010)</li>
-            <li class="listItem">Koi No Yokan (2012)</li>
-            <li class="listItem">Gore (2016)</li>
-            <li class="listItem">Ohms (2020)</li>
+        <ol class="section__list">
+            <li>Adrenaline (1995)</li>
+            <li>Around The Fur (1997)</li>
+            <li>White Pony (2000)</li>
+            <li>Deftones (2003)</li>
+            <li>Saturday Night Wrist (2006)</li>
+            <li>Diamond Eyes (2010)</li>
+            <li>Koi No Yokan (2012)</li>
+            <li>Gore (2016)</li>
+            <li>Ohms (2020)</li>
         </ol>
     </section>
-    <section class="section section--bright" id="topFive">
-        <h3 class="section__header section__header--bright">Moje "Top 5" utworów</h3>
+    <section class="section" id="topFive">
+        <h3 class="section__header">Moje "Top 5" utworów</h3>
         <table class="table">
             <tr>
-                <th class="tableCell tableHeader" scope="col">Miejsce</th>
-                <th class="tableCell tableHeader" scope="col">Tytuł utworu</th>
-                <th class="tableCell tableHeader" scope="col">Album</th>
+                <th class="table__cell table__header" scope="col">Miejsce</th>
+                <th class="table__cell table__header" scope="col">Tytuł utworu</th>
+                <th class="table__cell table__header" scope="col">Album</th>
             </tr>
             <tr>
-                <td class="tableCell">1.</td>
-                <td class="tableCell">Digital Bath</td>
-                <td class="tableCell">White Pony</td>
+                <td class="table__cell">1.</td>
+                <td class="table__cell">Digital Bath</td>
+                <td class="table__cell">White Pony</td>
             </tr>
             <tr>
-                <td class="tableCell">2.</td>
-                <td class="tableCell">Be Quiet And Drive</td>
-                <td class="tableCell">Around The Fur</td>
+                <td class="table__cell">2.</td>
+                <td class="table__cell">Be Quiet And Drive</td>
+                <td class="table__cell">Around The Fur</td>
             </tr>
             <tr>
-                <td class="tableCell">3.</td>
-                <td class="tableCell">Minerva</td>
-                <td class="tableCell">Deftones</td>
+                <td class="table__cell">3.</td>
+                <td class="table__cell">Minerva</td>
+                <td class="table__cell">Deftones</td>
             </tr>
             <tr>
-                <td class="tableCell">4.</td>
-                <td class="tableCell">Entombed</td>
-                <td class="tableCell">Koi No Yokan</td>
+                <td class="table__cell">4.</td>
+                <td class="table__cell">Entombed</td>
+                <td class="table__cell">Koi No Yokan</td>
             </tr>
             <tr>
-                <td class="tableCell">5.</td>
-                <td class="tableCell">The Spell Of Mathematics</td>
-                <td class="tableCell">Ohms</td>
+                <td class="table__cell">5.</td>
+                <td class="table__cell">The Spell Of Mathematics</td>
+                <td class="table__cell">Ohms</td>
             </tr>
         </table>
     </section>
     <section class="section" id="links">
         <h3 class="section__header">
             Linki</h3>
-        <ol class="mediaLinks">
-            <li>
-                <a class="section__link" href="https://www.youtube.com/c/deftones/featured">Deftones na YouTube</a>
+        <ol>
+            <li class="section__mediaLinks">
+                <a class="section__mediaLinksItem" href="https://www.youtube.com/c/deftones/featured">Deftones na
+                    YouTube</a>
             </li>
-            <li>
-                <a class="section__link" href="https://music.apple.com/pl/artist/deftones/1092903?l=pl">Deftones w Apple
+            <li class="section__mediaLinks">
+                <a class="section__mediaLinksItem"
+                    href="https://music.apple.com/pl/artist/deftones/1092903?l=pl">Deftones w
+                    Apple
                     Music</a>
             </li>
         </ol>

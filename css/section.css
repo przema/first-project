@@ -1,14 +1,5 @@
 .section {
-    color: #c4c4c4;
-    background-color: #343434;
     padding: 5px 10px;
-    margin: 0 auto;
-}
-
-.section--bright {
-    color: #343434;
-    background-color: #c9c9c9;
-    padding: 20px 10px;
     margin: 0 auto;
 }
 
@@ -22,11 +13,18 @@
     border-left-color: #b46429;
 }
 
-.section__header--bright {
-    background-color: #c9c9c9;
-    margin: auto;
+.section__quote {
+    padding: 0px 10px;
+    font-family: 'Shadows Into Light', cursive, sans-serif;
+    font-size: 40px;
+    line-height: 1.3;
+    text-shadow: 3px 5px 8px #b46429;
 }
 
+.section__quoteAuthor {
+    text-align: end;
+    text-shadow: 3px 5px 8px #b56329;
+}
 
 .section__article {
     font-size: 16px;
@@ -35,12 +33,10 @@
     line-height: 1.8;
 }
 
-.section__link {
-    color: #c4c4c4;
+.section__list {
     margin-left: 5%;
-    margin-top: 10;
     line-height: 1.6;
-    text-decoration: none;
+    list-style-type: square;
 }
 
 .section__link:visited {
@@ -52,6 +48,26 @@
 }
 
 .section__link:hover {
+    color: #b46429;
+    border-bottom: 2px solid;
+}
+
+.section__mediaLinks {
+    color: #343434;
+    margin: 20px 0px;
+    list-style-type: circle;
+}
+
+.section__mediaLinksItem {
+    color: #343434;
+    text-decoration: none;
+}
+
+.section__mediaLinksItem:focus {
+    outline: 1px currentColor;
+}
+
+.section__mediaLinksItem:hover {
     color: #b46429;
     border-bottom: 2px solid;
 }
